@@ -12,7 +12,7 @@
     --gray-darker: #22221e;
     --latte:#e3b88c;
     --brown:#926e49;
-    --black:#030401;
+    --black:#141513;
     --green:#699e1a;
     --white:#e4e3e1;
 }
@@ -21,7 +21,7 @@
 html {
     scroll-behavior: smooth;
     font-family: "Google Sans", sans-serif;
-    background-color: var(--gray-darker);
+    background-color: var(--gray_brighter);
 }
 
 button {
@@ -127,14 +127,4 @@ nav a:hover {
     height: 100%;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(30,30,30,0.8)); /* 50% черного */
     z-index: 1;
-}
-
-/* 🔥 ГЛАВНАЯ ФИШКА: на узких экранах убираем картинку */
-@media (max-width: 768px) {
-    .hero_content {
-        /* Убираем картинку, оставляем только цвет */
-        background-image: none;
-    
-        background-color: var(--gray); 
-    }
 }
