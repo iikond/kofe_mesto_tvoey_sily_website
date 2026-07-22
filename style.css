@@ -170,3 +170,21 @@ nav a:hover {
     border-color: var(--green);
     border-style: solid;
 }
+
+footer {
+    padding: 16px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    background: var(--latte);
+
+    border-top: 4px solid var(--white);
+}
+
+footer p {
+    color: var(--gray-darker);
+}
