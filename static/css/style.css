@@ -158,7 +158,18 @@ nav a:hover {
 
 .menu {
     margin-left: 48px;
+    margin-right: 48px;
     margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.menu_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: auto;
+    flex-direction: auto;
+    text-align: center;
 }
 
 .menu_item {
@@ -166,6 +177,8 @@ nav a:hover {
     min-width: 320px;
     height: 480px;
     min-height: 480px;
+
+    margin: 16px;
     border-radius: 24px;
     border-color: var(--green);
     border-style: solid;

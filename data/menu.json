@@ -4,5 +4,23 @@
         "price":200,
         "description":"Кофе",
         "image":"Soon"
+    },
+    {
+        "name":"Латте",
+        "price":250,
+        "description":"Кофе латте",
+        "image":"Soon"
+    },
+    {
+        "name":"Капучино",
+        "price":200,
+        "description":"Кофе",
+        "image":"Soon"
+    },
+    {
+        "name":"Латте",
+        "price":250,
+        "description":"Кофе латте",
+        "image":"Soon"
     }
 ]
