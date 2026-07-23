@@ -10,9 +10,9 @@ async function loadMenu() {
         div.className = "menu_item";
 
         div.innerHTML = `
-            <img src="${item.image}">
+            <img alt="${item.name} фото" src="${item.image}">
             <h2>${item.name}</h2>
-            <p>${item.description}</p>
+            <p class="menu_item_description">${item.description}</p>
             <span>${item.price} руб.</span>
         `;
 

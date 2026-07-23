@@ -3,24 +3,24 @@
         "name":"Капучино",
         "price":200,
         "description":"Кофе",
-        "image":"Soon"
+        "image":"../static/images/coffee.jpg"
     },
     {
         "name":"Латте",
         "price":250,
         "description":"Кофе латте",
-        "image":"Soon"
+        "image":"../static/images/coffee.jpg"
     },
     {
         "name":"Капучино",
         "price":200,
         "description":"Кофе",
-        "image":"Soon"
+        "image":"../static/images/coffee.jpg"
     },
     {
         "name":"Латте",
         "price":250,
         "description":"Кофе латте",
-        "image":"Soon"
+        "image":"../static/images/coffee.jpg"
     }
 ]

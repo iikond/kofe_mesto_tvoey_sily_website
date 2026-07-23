@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 * {
     margin: 0;
@@ -15,13 +15,14 @@
     --brown: #926e49;
     --black: #141513;
     --green: #699e1a;
+    --green-darker: #547e14;
     --white: #e4e3e1;
 }
 
 /*общие стили*/
 html {
     scroll-behavior: smooth;
-    font-family: "Google Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: var(--gray_brighter);
 }
 
@@ -31,9 +32,10 @@ html {
     background: var(--green);
     color: var(--black);
 
-    padding: 16px 32px;
+    border-radius: 999px;
+    padding: 14px 28px;
+    letter-spacing: .3px;
 
-    border-radius: 24px;
 
     text-decoration: none;
 
@@ -49,8 +51,8 @@ html {
     box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
 }
 
-button p {
-    font-size: 24px;
+p {
+    font-size: 16px;
     margin: 16px;
     color: var(--black);
     font-family: "Google Sans", sans-serif;
@@ -60,7 +62,7 @@ button p {
 h1,
 h2,
 h3 {
-    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
     /* Если хочешь, чтобы заголовок был по центру */
     color: var(--white);
@@ -78,9 +80,8 @@ header {
 
     height: 64px;
     min-height: 64px;
-    background: var(--latte);
-
-    backdrop-filter: blur(15px);
+    background: rgba(227, 184, 140, 0.85);
+    backdrop-filter: blur(12px);
 
     z-index: 1000;
 }
@@ -151,7 +152,11 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(30, 30, 30, 0.8));
+    background:
+    linear-gradient(
+    rgba(20,15,10,.35),
+    rgba(20,15,10,.85)
+    );
     /* 50% черного */
     z-index: 1;
 }
@@ -174,14 +179,44 @@ nav a:hover {
 
 .menu_item {
     width: 320px;
-    min-width: 320px;
-    height: 480px;
-    min-height: 480px;
+    padding: 24px;
+
+    background: var(--white);
+
+    border: none;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.12);
+
 
     margin: 16px;
     border-radius: 24px;
-    border-color: var(--green);
-    border-style: solid;
+
+    transition: transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.menu_item:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
+
+.menu_item img {
+    width: 240px;
+    height: 240px;
+    border-radius: 24px;
+    margin: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
+
+.menu_item p {
+    margin-top: 12px;
+    opacity: .75;
+}
+
+.menu_item h2 {
+    color: var(--gray-darker);
 }
 
 footer {
